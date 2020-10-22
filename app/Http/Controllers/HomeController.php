@@ -16,10 +16,6 @@ class HomeController extends Controller
 
     public function landingPage()
     {
-<<<<<<< HEAD
         return view('landing-page.landing-page');
-=======
-        return view('welcome');
->>>>>>> 4a80795258c4edc79079d1358e30ed969cba7b34
     }
 }
