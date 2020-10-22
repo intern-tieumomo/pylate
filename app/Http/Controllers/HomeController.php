@@ -13,9 +13,4 @@ class HomeController extends Controller
 
         return redirect()->back();
     }
-
-    public function landingPage()
-    {
-        return view('landing-page.landing-page');
-    }
 }
