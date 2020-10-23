@@ -3,8 +3,10 @@
 namespace App\Http\Controllers\LandingPage;
 
 use App\Http\Controllers\Controller;
+use App\Mail\ContactMail;
 use App\Models\LandingPage\Contact;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 
 class ContactController extends Controller
 {
@@ -43,6 +45,14 @@ class ContactController extends Controller
             'subject' => $request->subject,
             'message' => $request->message,
         ]);
+
+        $mail = new \stdClass();
+        $mail->firstname = $request->firstname;
+        $mail->lastname = $request->lastname;
+        $mail->subject = $request->subject;
+        
+        $mail = new ContactMail($mail);
+        Mail::to($request->email)->send($mail);
     }
 
     /**

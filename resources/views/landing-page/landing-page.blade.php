@@ -8,7 +8,6 @@
 
         <link rel="shortcut icon" href="{{ asset('landing-page/images/icon.png') }}" type="image/x-icon">
         <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700" rel="stylesheet">
-        <link rel="stylesheet" href="{{ asset('landing-page/fonts/icomoon/style.css') }}">
         <link rel="stylesheet" href="{{ asset('landing-page/css/bootstrap.min.css') }}">
         <link rel="stylesheet" href="{{ asset('landing-page/css/jquery-ui.css') }}">
         <link rel="stylesheet" href="{{ asset('landing-page/css/owl.carousel.min.css') }}">
@@ -16,7 +15,6 @@
         <link rel="stylesheet" href="{{ asset('landing-page/css/owl.theme.default.min.css') }}">
         <link rel="stylesheet" href="{{ asset('landing-page/css/jquery.fancybox.min.css') }}">
         <link rel="stylesheet" href="{{ asset('landing-page/css/bootstrap-datepicker.css') }}">
-        <link rel="stylesheet" href="{{ asset('landing-page/fonts/flaticon/font/flaticon.css') }}">
         <link rel="stylesheet" href="{{ asset('landing-page/css/aos.css') }}">
         <link rel="stylesheet" href="{{ asset('landing-page/css/style.css') }}">
 
